@@ -2,7 +2,7 @@
   "machines": [
     {
       "hostname": "shira2",
-      "address": "10.1.1.10"
+      "address": "10.1.1.9"
     },
     {
       "hostname": "yuki2",
@@ -10,15 +10,15 @@
     },
     {
       "hostname": "hime2",
-      "address": "10.1.1.10"
+      "address": "10.1.1.11"
     },
     {
       "hostname": "12lite",
-      "address": "10.1.1.10"
+      "address": "10.1.1.12"
     },
     {
       "hostname": "12note",
-      "address": "10.1.1.10"
+      "address": "10.1.1.13"
     }
   ]
 }
