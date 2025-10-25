@@ -1,7 +1,7 @@
 <template>
   <Html class="dark">
     <Head>
-      <title>Monika</title>
+      <Title>Monika</Title>
     </Head>
     <Body>
       <NuxtPage />

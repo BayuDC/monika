@@ -1,0 +1,24 @@
+{
+  "machines": [
+    {
+      "hostname": "shira2",
+      "address": "10.1.1.10"
+    },
+    {
+      "hostname": "yuki2",
+      "address": "10.1.1.10"
+    },
+    {
+      "hostname": "hime2",
+      "address": "10.1.1.10"
+    },
+    {
+      "hostname": "12lite",
+      "address": "10.1.1.10"
+    },
+    {
+      "hostname": "12note",
+      "address": "10.1.1.10"
+    }
+  ]
+}
