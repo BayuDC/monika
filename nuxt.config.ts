@@ -20,4 +20,7 @@ export default defineNuxtConfig({
      */
     componentDir: './app/components/ui',
   },
+  routeRules: {
+    '/**': { ssr: false },
+  },
 });
