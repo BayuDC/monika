@@ -16,8 +16,12 @@
               <div class="md:col-span-2">
                 <MachineList />
               </div>
-              <div>
-                <LogsActivity />
+              <div class="flex flex-col gap-6 md:row-span-2">
+                <LogsActivity class="h-full" />
+              </div>
+              <div class="hidden md:block"></div>
+              <div class="">
+                <LastUpdate />
               </div>
             </div>
           </div>

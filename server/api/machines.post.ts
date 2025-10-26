@@ -16,9 +16,23 @@ export default defineEventHandler(async event => {
     const data = await schema.validate(body);
     if (!data?.length) throw Error;
 
-    for (const m of data) {
-      await MachineSchema.findOneAndUpdate({ address: m.address }, m);
-    }
+    await MachineSchema.bulkWrite(
+      data.map(m => {
+        const update: any = { $set: m };
+
+        if (m.address === '10.1.1.32' && m.isOnline) {
+          update.$set = { ...m, lastSeen: new Date() };
+        }
+
+        return {
+          updateOne: {
+            filter: { address: m.address },
+            update,
+            upsert: true,
+          },
+        };
+      })
+    );
 
     return { data };
   } catch (e) {

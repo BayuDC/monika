@@ -17,5 +17,9 @@ export const MachineSchema = defineMongooseModel({
       type: Boolean,
       required: false,
     },
+    lastSeen: {
+      type: Date,
+      required: false,
+    },
   },
 });

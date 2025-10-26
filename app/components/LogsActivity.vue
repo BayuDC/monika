@@ -5,7 +5,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 </script>
 
 <template>
-  <Card class="h-full">
+  <Card class="">
     <CardHeader>
       <CardTitle>Logs Activity</CardTitle>
       <CardDescription>Recent activity and system logs</CardDescription>
